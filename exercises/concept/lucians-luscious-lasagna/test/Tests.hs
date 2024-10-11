@@ -25,5 +25,5 @@ main = hspec $ do
         totalTimeInMinutes 4 8 `shouldBe` 16
 
     it "notification message" $
-        alarm `shouldBe` "Ding!"
+        alarm `shouldBe` "DING!"
     
