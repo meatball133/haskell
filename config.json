@@ -102,11 +102,9 @@
         "name": "Temperature",
         "uuid": "6ed15adb-f022-4bbd-bbb3-22845deabc91",
         "prerequisites": [
-          "basics"
         ],
         "status": "deprecated",
         "concepts": [
-          "numbers"
         ]
       }
     ],
