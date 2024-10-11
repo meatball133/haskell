@@ -1,5 +1,5 @@
 import Test.Hspec             (it, shouldBe, hspec)
-import LuciansLusciousLasagna (elapsedTimeInMinutes, expectedMinutesInOven, preparationTimeInMinutes)
+import LuciansLusciousLasagna (expectedMinutesInOven, expectedMinutesInOven, preparationTimeInMinutes)
 
 main :: IO ()
 main = hspec $ do
