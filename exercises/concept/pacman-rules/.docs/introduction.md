@@ -1,4 +1,4 @@
-# Introduction
+# Bools
 
 Haskell has a type known as [`Bool`][bools].
 It is an enumeration of `True` and `False`.
@@ -39,7 +39,7 @@ False || False
 
 ### Not(`not`)
 
-The _not_ operator in Crystal is represented by `not` and returns `True` if the given Bool is `False` and returns `False` if `True` is provided.
+The _not_ operator in Haskell is represented by `not` and returns `True` if the given Bool is `False` and returns `False` if `True` is provided.
 When using the _not_ operator, one Bool should be placed after the operator (`not`).
 
 ```haskell
