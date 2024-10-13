@@ -61,6 +61,45 @@ ghci> :t Card
 Card :: Rank -> Suit -> Card
 ```
 
+## Named fields
+
+When defining a data type you can also give the fields names, this can make the code more readable and easier to understand.
+This can be done by using the **record syntax**, where you define the fields of the type by using the `field :: Type` syntax.
+
+You can then use the field names to create values of the type, this can make the code more readable and easier to understand.
+What is worth pointing out is that the order doesn't matter when creating values of the type with named fields.
+
+```haskell
+data Person = Person { name :: String, age :: Int }
+
+Person { age = 25, name = "Alice"}
+-- -> Person {name = "Alice", age = 25}
+
+-- You can still use the normal syntax to create values of the type
+Person "Bob" 30
+-- -> Person {name = "Bob", age = 30}
+```
+
+## Deriving Typeclasses
+
+When defining a new type you can also derive typeclasses for it, this can be done by adding the `deriving` keyword followed by the typeclass you want to derive.
+Typeclasses are a way to define a set of functions that a type must implement, for example the `Show` typeclass defines a function `show` that takes a value of the type and returns a `String`.
+Another example is the `Eq` typeclass that defines two functions `==` and `/=` that takes two values of the type and returns a `Bool`.
+
+
+```haskell
+data Suit = Hearts | Clubs | Diamonds | Spades deriving (Show, Eq)
+
+hearts = Hearts
+clubs = Clubs
+
+hearts == clubs
+-- -> False
+```
+
+By just deriving the `Show` typeclass so we can now use the `show` function to get a `String` representation of the value, without having to implement the function ourself.
+But in later concepts we will explore how to implement custom instances of typeclasses.
+
 ## Type Synonyms
 
 Type synonyms are a way to give an alredy exsisting type a different name, this can be useful to make the code more readable.

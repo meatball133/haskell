@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "url": "https://en.wikibooks.org/wiki/Haskell/Type_declarations",
+        "description": "Type declarations"
+    },
+    {
+        "url": "https://wiki.haskell.org/Type",
+        "description": "Haskell wiki: Type"
+    }
+]

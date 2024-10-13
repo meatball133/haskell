@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "meatball133"
+  ],
+  "files": {
+    "solution": [
+      "src/TrainManagement.hs",
+      "package.yaml"
+    ],
+    "test": [
+      "test/Tests.hs"
+    ],
+    "exemplar": [
+      ".meta/exemplar/src/TrainManagement.hs"
+    ],
+    "invalidator": [
+      "stack.yaml"
+    ]
+  },
+  "icon": "tracks-on-tracks-on-tracks",
+  "blurb": "Learn about type decelartions by implementing types for Trelleborgs train management."
+}
